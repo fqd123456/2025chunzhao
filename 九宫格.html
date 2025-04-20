@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .grid-container {
+    width: 300px; /* 容器宽度 */
+    overflow: hidden; /* 清除浮动 */
+}
+
+.grid-item {
+    float: left;
+    width: 33.33%; /* 每个单元格占容器的三分之一 */
+    padding-bottom: 33.33%; /* 使用 padding-bottom 来保持比例 */
+    box-sizing: border-box;
+    position: relative;
+    background-color: lightgreen;
+}
+
+.grid-item > div {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+    </div>
+    
+</body>
+</html>
